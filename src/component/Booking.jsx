@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-// import './Booking.css';
+
 
 const MEMBERSHIP_RATES = {
   Basic: 10,
