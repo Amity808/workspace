@@ -77,7 +77,7 @@ const Booking = () => {
           <div 
             key={desk.id}
             className={`desk ${desk.type} ${desk.isBooked ? 'booked' : ''} ${selectedDesk?.id === desk.id ? 'selected' : ''}`}
-            
+            onClick={() => handleDeskSelect(desk)}
           >
             <div className="card bg-primary text-black w-96">
             <div className="card-body">
@@ -85,7 +85,7 @@ const Booking = () => {
                 {desk.isBooked ?  <p>Thanks for choosing use for your project</p>: <p>Get comfortable with our workspace?</p>}
                 {/* <p>Get comfortable with our workspace?</p> */}
                 <div className="card-actions justify-end">
-                <button className="btn" onClick={() => handleDeskSelect(desk)}>Book Now</button>
+                <button className="btn" >Book Now</button>
                 </div>
             </div>
             </div>
